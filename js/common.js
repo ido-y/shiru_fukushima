@@ -89,3 +89,31 @@ $(function() {
   };
 });
 
+// Top Slide
+/* --------------------------------------------------- */
+$(function() {
+  if ($('div').hasClass('mv_area')) {
+    $('.mv_area .main_slider').slick( {
+      autoplay: true,
+      autoplaySpeed: 5000,
+      dots: true,
+      arrows: false,
+      infinite: true,
+      slidesToShow: 1,
+    });
+    $('.mv_area .slick-dots').wrap('<div class="container"></div>');
+    $('.mv_area .main_slider .container').wrap('<div class="slick_nav"></div>');
+    $('.mv_area .slick_nav .container').append('<div class="slick_ps"><div class="slick_play"><a href="javascript:void(0);"><img src="./images/css/icon_play.png" alt="再生"></a></div><div class="slick_stop active"><a href="javascript:void(0);"><img src="./images/css/icon_stop.png" alt="停止"></a></div></div>');
+    $('.mv_area .slick_stop').on('click',function() {
+      $('.mv_area .main_slider').slick('slickPause');
+      $(this).removeClass('active');
+      $('.mv_area .slick_play').addClass('active');
+    });
+    $('.mv_area .slick_play').on('click',function() {
+      $('.mv_area .main_slider').slick('slickPlay');
+      $(this).removeClass('active');
+      $('.mv_area .slick_stop').addClass('active');
+    });
+ }
+});
+
