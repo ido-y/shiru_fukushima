@@ -97,7 +97,9 @@ $(function() {
       autoplay: true,
       autoplaySpeed: 5000,
       dots: true,
-      arrows: false,
+      arrows: true,
+      prevArrow: '<a href="javascript:void(0);" class="slick-prev"><img src="./images/css/icon_prev.png" alt="前の画像へ"></a>',
+      nextArrow: '<a href="javascript:void(0);" class="slick-next"><img src="./images/css/icon_next.png" alt="次の画像へ"></a>',
       infinite: true,
       slidesToShow: 1,
     });
