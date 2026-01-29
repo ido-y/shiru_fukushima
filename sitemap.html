@@ -8,7 +8,7 @@
 	<title>サイトマップ｜福島県金融広報委員会「知るぽると」</title>
 	<meta name="description" content="福島県金融広報委員会「知るぽると」サイトのサイトマップを掲載しています。">
 	<meta name="format-detection" content="telephone=no">
-	<meta property="og:url" content="https://www3.boj.or.jp/fukushima/kinkoui/sitemap.html">
+	<meta property="og:url" content="https://www3.boj.or.jp/fukushima/sitemap.html">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="サイトマップ">
 	<meta property="og:description" content="福島県金融広報委員会「知るぽると」サイトのサイトマップを掲載しています。">
@@ -22,9 +22,12 @@
 	<link href="images/common/favicon.ico" rel="shortcut icon">
 	<link href="images/common/favicon_apple.png" rel="apple-touch-icon">
 	<link href="images/common/favicon_android.png" rel="icon" type="image/png">
+	<script>
+		location.replace("sitemap.html");
+	</script>
 </head>
 
-<body class="sitemap">
+<body>
 	<p class="skip"><a href="#skip">共通メニューをスキップして本文へ</a></p>
 	<header id="pagetop">
 		<div class="container">
@@ -43,7 +46,7 @@
 				<nav class="menu collapse navbar-collapse" id="menu">
 					<ul>
 						<li>
-							<a href="lecturer.html" class="">講師の無料派遣</a>
+							<a href="lecturer.html">講師の無料派遣</a>
 						</li>
 						<li>
 							<a href="activity.html">学習支援</a>
@@ -52,9 +55,8 @@
 							<a href="event.html">イベント情報</a>
 						</li>
 						<li>
-							<a href="tips.html" class="">お役立ち情報</a>
+							<a href="tips.html">お役立ち情報</a>
 						</li>
-
 					</ul>
 				</nav>
 			</div>
@@ -74,36 +76,6 @@
 				</ul>
 			</div>
 		</nav>
-
-		<section class="page_area">
-			<div class="container">
-
-				<h2 class="page_h2">サイトマップ</h2>
-
-				<div class="page_box">
-					<ul class="sitemap_list">
-						<li><a href="index.html" class="btn_link">ホーム</a></li>
-						<li><a href="lecturer.html" class="btn_link">講師の無料派遣</a></li>
-						<li><a href="activity.html" class="btn_link">学習支援</a></li>
-						<li><a href="event.html" class="btn_link">イベント情報</a></li>
-						<li><a href="tips.html" class="btn_link">お役立ち情報</a></li>
-						<li><a href="privacypolicy.html" class="btn_link">プライバシーポリシー</a></li>
-						<li><a href="notice.html" class="btn_link">注意事項</a></li>
-						<li><a href="accessibility.html" class="btn_link">アクセシビリティ</a></li>
-
-<!--
-
-▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ サイトマップ 編集例 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
-
-<li><a href="ファイル名.html" class="btn_link">ページタイトル</a></li>
-
-▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ サイトマップ 編集例 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
-
--->
-					</ul>
-				</div>
-			</div>
-		</section>
 	</main>
 
 	<footer>
@@ -140,7 +112,7 @@
 							<li><a href="privacypolicy.html">プライバシーポリシー</a></li>
 							<li><a href="notice.html">注意事項</a></li>
 							<li><a href="accessibility.html">アクセシビリティ</a></li>
-							<li><a class="active">サイトマップ</a></li>
+							<li><a href="sitemap.html">サイトマップ</a></li>
 						</ul>
 					</nav>
 					<ul class="foot_banner">
@@ -156,6 +128,7 @@
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/common.js"></script>
+
 </body>
 
 </html>
