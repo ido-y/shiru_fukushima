@@ -2841,6 +2841,7 @@ footer {
 .eve_page .next_area .next_box .event_list .entry_list {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 	gap: 5px 30px;
 }
 
@@ -2917,7 +2918,7 @@ footer {
 .eve_page dl .event_list dt {
 	width: 140px;
 	padding: 8px 0;
-	background: #D0576B;
+	background: #c74c5c;
 	border-radius: 3px;
 	color: #fff;
 	font-size: 87.5%;
